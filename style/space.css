@@ -15,6 +15,10 @@ body {
 	font-size: 14px;
 }
 /*контейнер для содержимого страницы*/
+header > div.container {
+	display: flex;
+	flex-direction: row;
+}
 .container {
     display: flex;
     width: 100%;
@@ -61,6 +65,7 @@ h6 {
 /*Предусьтановки для установки flex элементов: row - горезонтально, collumn - вертекально*/
 div > img.icon {
 	padding: 0 0 0 10px;
+	text-align: right;
 }
 .row{
     display: flex;
