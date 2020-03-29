@@ -1,1 +1,201 @@
-
+/*Импорт стилей, шрифтов и иконок*/
+/*Сброс CSS*/
+@import url("https://marksheet.io/css/reset.css");
+/*А может быть лудше Normalize*/
+@import url("https://github.com/necolas/normalize.css/blob/master/normalize.css");
+@import url("");/*Дополнительные шрифты из Google Font*/
+/*Базовые стили*/
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	font-size: 14px;
+}
+/*контейнер для содержимого страницы*/
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /*Максимальная ширина может иметь другое значение*/
+    margin: 0 auto;
+}
+.button {
+	height: 50px;
+	/*width: 100px;*/
+    background-color: yellow;
+    border-radius: 5px;
+	padding: 20px 30px;
+	margin: 10px 20px;
+	text-decoration: none !important;
+}
+.button:hover {
+	background-color: lightyellow;
+}
+h1 {
+	font-size: 2.4em;
+	padding: .8em 0 1.2em 0;
+}
+h2 {
+	font-size: 2.2em;
+	padding: .8em 0 1em 0;
+}
+h3 {
+	font-size: 2em;
+	padding: .8em 0 .8em 0;
+}
+h4 {
+	font-size: 1.8em;
+	padding: .8em 0 .6em 0;
+}
+h5 {
+	font-size: 1.6em;
+	padding: .8em 0 .6em 0;
+}
+h6 {
+	font-size: 1.4em;
+	padding: .8em 0 .6em 0;
+}
+/*Предустановки*/
+/*Предусьтановки для установки flex элементов: row - горезонтально, collumn - вертекально*/
+div > img.icon {
+	padding: 0 0 0 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Гибкая верстка*/
+img{
+    width: 100%;
+    max-width: 100%;
+}
+.col-1{
+    display: flex;
+    flex: 1;
+}
+.col-2{
+    display: flex;
+    flex: 2;
+}
+.col-3{
+    display: flex;
+    flex: 3;
+}
+.col-4{
+    display: flex;
+    flex: 4;
+}
+.col-5{
+    display: flex;
+    flex: 5;
+}
+.col-6{
+    display: flex;
+    flex: 6;
+}
+.col-7{
+    display: flex;
+    flex: 7;
+}
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+}
+.b-right {
+	border-right: 1px solid #e5e5e5;
+}
+.b-top {
+	border-top: 1px solid #e5e5e5;
+}
+.b-left {
+	border-left: 1px solid #e5e5e5;
+}
+.b-bottom {
+	border-bottom: 1px solid #e5e5e5;
+}
+/*Шапка сайта*/
+header{
+    display: flex;
+	flex-direction: column;
+    flex: 0 0 auto;
+    background-color: gray;
+    height: 100px;
+    color: gray;
+}
+header > div.container{
+    height: 100%;
+	align-items: center;
+}
+header ul li{
+    margin-right: 20px;
+}
+header .logo{
+	width: 100px;
+}
+/*Основное содержимое свайта*/
+main{
+    display:flex;
+    flex: 1 0 auto;
+    background-color: white;
+    background-position: center, center;
+    background-size: cover;
+}
+section{
+    display:flex;
+    flex: 3 0 auto;/* 3 - это ширена столбца*/
+    padding: 0 15px;
+}
+aside{
+    display:flex;
+    flex: 1 0 auto;/* 1 - это ширена столбца*/
+    padding: 0 15px;
+}
+aside a{
+	color: #000;
+	text-decoration: none;
+}
+aside a:hover {
+	text-decoration: underline;
+}
+aside li {
+	line-height: 1.5em;
+}
+/*Подвал*/
+footer{
+    display:flex;
+    flex: 0 0 auto;
+	background-color: #000;
+	height: 200px;
+    color: #fff;
+}
+footer > div.container{
+    height: 100%;
+    padding: 10px 0;
+}
+footer nav ul{
+    margin-right: 30px;
+}
+footer li {
+	line-height: 2em;
+}
+header a,
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
